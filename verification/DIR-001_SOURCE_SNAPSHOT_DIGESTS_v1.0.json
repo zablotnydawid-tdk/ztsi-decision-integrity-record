@@ -1,0 +1,54 @@
+{
+    "schema":  "ztsi.source-snapshot-digests.v1",
+    "manifest_id":  "ZTSI-DIR-001-SOURCE-SNAPSHOT-DIGESTS-v1.0",
+    "record_id":  "DIR-001",
+    "case_id":  "ZT\u0026SI-2026-0901-001",
+    "principle":  "EVIDENCE BEFORE NARRATIVE",
+    "capture_scope":  "Exact bytes retrieved from externally referenced public sources at capture time",
+    "sources":  {
+                    "source_1":  {
+                                     "publisher":  "Baltic Power",
+                                     "requested_url":  "https://balticpower.pl/aktualnosci/przetarg-na-%C5%9Bwiadczenie-us%C5%82ug-in%C5%BCyniera-kontraktu-dla-realizacji-projektu-budowy-morskiej-farmy-wiatrowej-baltic-power/",
+                                     "resolved_url":  "https://balticpower.pl/aktualnosci/przetarg-na-%C5%9Bwiadczenie-us%C5%82ug-in%C5%BCyniera-kontraktu-dla-realizacji-projektu-budowy-morskiej-farmy-wiatrowej-baltic-power/",
+                                     "retrieved_utc":  "2026-09-03T16:41:51.8860649Z",
+                                     "http_status":  200,
+                                     "content_type":  "text/html; charset=utf-8",
+                                     "bytes":  26413,
+                                     "sha256":  "e5d99606b9f08c2704d90cd6c24c93ff63788d4b121fd745a575fa993fa21bd7",
+                                     "state":  "SNAPSHOT_DIGEST_BOUND"
+                                 },
+                    "source_2":  {
+                                     "publisher":  "Polskie Sieci Elektroenergetyczne",
+                                     "requested_url":  "https://www.pse.pl/documents/20182/30599281/Otwarcie_stacji_Choczewo_informacja_prasowa_PSE_10072026.pdf/ea44841e-2960-4921-9ca2-ad560b38b9d8",
+                                     "resolved_url":  "https://www.pse.pl/documents/20182/30599281/Otwarcie_stacji_Choczewo_informacja_prasowa_PSE_10072026.pdf/ea44841e-2960-4921-9ca2-ad560b38b9d8",
+                                     "retrieved_utc":  "2026-09-03T16:41:52.8360060Z",
+                                     "http_status":  200,
+                                     "content_type":  "application/pdf;charset=UTF-8",
+                                     "bytes":  190396,
+                                     "sha256":  "30bdd1aa3466b24b23d151f03b76883a3221b04c5cea906f7f747de7f990a87b",
+                                     "state":  "SNAPSHOT_DIGEST_BOUND"
+                                 }
+                },
+    "storage_boundary":  {
+                             "source_bytes_committed_to_repository":  false,
+                             "source_bytes_retained_in_manifest":  false,
+                             "published_material":  "metadata_and_sha256_only"
+                         },
+    "interpretation_boundary":  [
+                                    "A digest proves identity of the bytes captured at retrieval time.",
+                                    "A digest does not prove the truth of the source content.",
+                                    "Future publisher-side changes may produce different hashes.",
+                                    "This manifest does not imply publisher certification, endorsement, notarization, or legal attestation."
+                                ],
+    "prior_binding":  {
+                          "path":  "verification/DIR-001_RELEASE_BINDING_v1.0.json",
+                          "commit":  "c9d3df02ac361c27ce44c9527d09b25003cacd30",
+                          "canonical_sha256":  "9fcbd9906c38e1eae55fb1036ab01af130917a283b6449ed5e6eac694d2c479c"
+                      },
+    "resulting_gate":  {
+                           "source_snapshot_binding":  "PASS",
+                           "raw_execution_log_binding":  "OPEN",
+                           "signed_release":  "PENDING",
+                           "dir_001_verdict":  "HOLD"
+                       }
+}
