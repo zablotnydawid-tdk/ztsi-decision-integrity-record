@@ -1,0 +1,73 @@
+{
+    "schema":  "ztsi.release-binding.v1",
+    "binding_id":  "ZTSI-DIR-001-RELEASE-BINDING-v1.0",
+    "record_id":  "DIR-001",
+    "case_id":  "ZT\u0026SI-2026-0901-001",
+    "principle":  "EVIDENCE BEFORE NARRATIVE",
+    "binding_scope":  "public verification surface",
+    "source_layer":  {
+                         "source_1":  {
+                                          "publisher":  "Baltic Power",
+                                          "url":  "https://balticpower.pl/aktualnosci/przetarg-na-%C5%9Bwiadczenie-us%C5%82ug-in%C5%BCyniera-kontraktu-dla-realizacji-projektu-budowy-morskiej-farmy-wiatrowej-baltic-power/",
+                                          "content_snapshot_sha256":  null,
+                                          "state":  "URL_TRACE_ONLY"
+                                      },
+                         "source_2":  {
+                                          "publisher":  "Polskie Sieci Elektroenergetyczne",
+                                          "url":  "https://www.pse.pl/documents/20182/30599281/Otwarcie_stacji_Choczewo_informacja_prasowa_PSE_10072026.pdf/ea44841e-2960-4921-9ca2-ad560b38b9d8",
+                                          "content_snapshot_sha256":  null,
+                                          "state":  "URL_TRACE_ONLY"
+                                      },
+                         "raw_execution_log":  {
+                                                   "public":  false,
+                                                   "sha256":  null,
+                                                   "state":  "NOT_PUBLICLY_BOUND"
+                                               }
+                     },
+    "claim_map":  {
+                      "C1":  "FACT",
+                      "C2":  "FACT",
+                      "C3":  "FACT",
+                      "C4":  "FACT",
+                      "C5":  "UNKNOWN"
+                  },
+    "evidence_layer":  {
+                           "open_evidence_gaps":  1,
+                           "provenance_path":  "DIR-001/PROVENANCE.md",
+                           "manifest_path":  "DIR-001/PUBLIC_MANIFEST.json",
+                           "canonical_anchor":  "DIR-001/CANONICAL_ANCHOR.txt"
+                       },
+    "decision_layer":  {
+                           "record_status":  "CLOSED",
+                           "final_verdict":  "HOLD",
+                           "derivation":  "SOURCE -\u003e EVIDENCE -\u003e CLAIM -\u003e CLASSIFICATION -\u003e GAP -\u003e DECISION RULE -\u003e HOLD",
+                           "record_path":  "DIR-001/RECORD.md"
+                       },
+    "canonical_anchor":  {
+                             "algorithm":  "SHA-256",
+                             "sha256":  "e0ecf2bdb7e2be9365b1b67ea882232a343c5732825de093b48856b0afc5a426",
+                             "bytes":  541,
+                             "encoding":  "UTF-8",
+                             "newline":  "LF",
+                             "final_newline":  false
+                         },
+    "release_layer":  {
+                          "initial_public_commit_sha":  "1864be1623be8c339c5bbf9da0a2f6c4562f8fba",
+                          "signed_release_required":  true,
+                          "signed_release_state":  "PENDING",
+                          "release_gate":  "HOLD_UNTIL_SIGNATURE_AND_SOURCE_SNAPSHOT_BINDING"
+                      },
+    "limitations":  [
+                        "External source URLs are traceable but byte-identical source snapshots are not yet cryptographically bound.",
+                        "The raw execution log is not publicly bound by digest in the current public surface.",
+                        "This binding proves traceability relationships and integrity anchors; it does not prove universal truth of every underlying factual claim."
+                    ],
+    "next_gate":  {
+                      "target_state":  "SIGNED_RELEASE_BOUND",
+                      "required":  [
+                                       "Bind byte-identical source snapshots or authoritative archived source digests.",
+                                       "Bind a digest of the raw execution log or privacy-preserving evidence-package manifest.",
+                                       "Create a cryptographically signed Git tag or signed release commit over the completed binding."
+                                   ]
+                  }
+}
