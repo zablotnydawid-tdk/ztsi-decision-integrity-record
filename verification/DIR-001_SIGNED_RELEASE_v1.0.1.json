@@ -1,0 +1,29 @@
+{
+    "schema":  "ZT\u0026SI_DIR_SIGNED_RELEASE",
+    "version":  "1.0.1",
+    "record_id":  "DIR-001",
+    "release_tag":  "ztsi-dir-001-release-v1.0.1",
+    "predecessor":  {
+                        "commit":  "355a0ddefaaac0e684b4316a7d75770f470d9a14",
+                        "tag":  "ztsi-dir-001-release-v1.0",
+                        "github_verification":  false,
+                        "github_reason":  "no_user"
+                    },
+    "correction":  {
+                       "type":  "GITHUB_IDENTITY_EMAIL_BINDING",
+                       "previous_email":  "kontakt@tdkproservice.pl",
+                       "verified_primary_email":  "zablotnydawid@gmail.com",
+                       "github_login":  "zablotnydawid-tdk",
+                       "github_user_id":  245948918,
+                       "signing_key_reused":  true,
+                       "signing_fingerprint":  "SHA256:hj2sZMvxIMtas8a7yZnK7g09s1elfbTHkuqqOV6hVqY"
+                   },
+    "evidence_state":  {
+                           "source_snapshot":  "PASS",
+                           "raw_execution_evidence_digest":  "PASS",
+                           "independent_semantic_authentication":  "OPEN",
+                           "dir_verdict":  "HOLD",
+                           "signed_release":  "PENDING_EXTERNAL_GITHUB_VERIFICATION"
+                       },
+    "claim_boundary":  "This correction repairs GitHub identity/email binding only. It does not authenticate Meta identity, session completeness, source truth, C5, or change the DIR-001 HOLD verdict."
+}
