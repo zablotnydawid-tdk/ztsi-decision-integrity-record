@@ -1,0 +1,4 @@
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+DIR-001/CANONICAL_ANCHOR.txt -text
