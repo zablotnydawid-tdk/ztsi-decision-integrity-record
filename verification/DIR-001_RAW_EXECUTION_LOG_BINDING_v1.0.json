@@ -1,0 +1,64 @@
+{
+    "schema":  "ztsi.raw-execution-artifact-binding.v1",
+    "binding_id":  "ZTSI-DIR-001-RAW-EXECUTION-LOG-BINDING-v1.0",
+    "record_id":  "DIR-001",
+    "case_id":  "ZT\u0026SI-2026-0901-001",
+    "principle":  "EVIDENCE BEFORE NARRATIVE",
+    "artifact_role":  "operator-supplied raw execution artifact bound to DIR-001",
+    "binding_method":  {
+                           "algorithm":  "SHA-256",
+                           "calculation_count":  2,
+                           "calculations_match":  true,
+                           "exact_byte_identity":  true
+                       },
+    "raw_execution_artifact":  {
+                                   "sha256":  "16d9bd4f74458ae68fc9025bfb758b3f0551555f8f87fb013ce00a78a5a77745",
+                                   "bytes":  5992,
+                                   "file_extension":  ".zip",
+                                   "local_absolute_path_published":  false,
+                                   "filename_published":  false,
+                                   "content_published":  false,
+                                   "repository_storage":  "NOT_COMMITTED",
+                                   "attestation_state":  "OPERATOR_ATTESTED",
+                                   "attestation_value":  "DIR-001",
+                                   "semantic_authenticity_state":  "NOT_INDEPENDENTLY_VERIFIED"
+                               },
+    "privacy_boundary":  {
+                             "raw_bytes_in_repository":  false,
+                             "local_path_in_repository":  false,
+                             "original_filename_in_repository":  false,
+                             "published_data":  "SHA256_BYTES_EXTENSION_AND_ATTESTATION_ONLY"
+                         },
+    "lineage":  {
+                    "canonical_record":  {
+                                             "path":  "DIR-001/CANONICAL_ANCHOR.txt",
+                                             "sha256":  "e0ecf2bdb7e2be9365b1b67ea882232a343c5732825de093b48856b0afc5a426",
+                                             "bytes":  541
+                                         },
+                    "release_binding":  {
+                                            "path":  "verification/DIR-001_RELEASE_BINDING_v1.0.json",
+                                            "commit":  "c9d3df02ac361c27ce44c9527d09b25003cacd30",
+                                            "canonical_sha256":  "9fcbd9906c38e1eae55fb1036ab01af130917a283b6449ed5e6eac694d2c479c"
+                                        },
+                    "source_snapshot_binding":  {
+                                                    "path":  "verification/DIR-001_SOURCE_SNAPSHOT_DIGESTS_v1.0.json",
+                                                    "commit":  "8c0b0fea150cf798eb6eb47cca5f3c4e1b128dff",
+                                                    "canonical_sha256":  "5c71786dec8d1bf879bfcee4e4f6ff5ccd02bf0cc1f5863b4baa1259dab23af3"
+                                                }
+                },
+    "evidence_boundary":  [
+                              "The SHA-256 digest establishes identity of the exact locally supplied byte sequence.",
+                              "The raw execution artifact itself is not published in this repository.",
+                              "Operator attestation associates the artifact with DIR-001.",
+                              "The digest alone does not independently prove completeness, origin, authorship, chronology, or truth of the artifact contents.",
+                              "Independent forensic authentication remains a separate evidence class."
+                          ],
+    "resulting_gate":  {
+                           "raw_execution_artifact_digest_binding":  "PASS",
+                           "operator_attestation":  "PASS",
+                           "independent_semantic_authentication":  "OPEN",
+                           "source_snapshot_binding":  "PASS",
+                           "signed_release":  "PENDING",
+                           "dir_001_verdict":  "HOLD"
+                       }
+}
