@@ -1,0 +1,67 @@
+{
+    "schema":  "ztsi.signed-release.v1",
+    "release_id":  "ZTSI-DIR-001-SIGNED-RELEASE-v1.0",
+    "case_id":  "DIR-001",
+    "repository":  "zablotnydawid-tdk/ztsi-decision-integrity-record",
+    "release_baseline":  {
+                             "commit":  "37559eab92b8f47de69fd33f9d4d82f9a3a8cd80"
+                         },
+    "lineage":  {
+                    "raw_execution_artifact_binding":  {
+                                                           "canonical_manifest_sha256":  "9e30cb940c04e0a0aa5a533cdfb1d6e58dfcf36809d9d7064d108e79c29008b7",
+                                                           "commit":  "37559eab92b8f47de69fd33f9d4d82f9a3a8cd80",
+                                                           "artifact_sha256":  "16d9bd4f74458ae68fc9025bfb758b3f0551555f8f87fb013ce00a78a5a77745"
+                                                       },
+                    "canonical_anchor":  {
+                                             "bytes":  541,
+                                             "sha256":  "e0ecf2bdb7e2be9365b1b67ea882232a343c5732825de093b48856b0afc5a426"
+                                         },
+                    "release_binding":  {
+                                            "canonical_sha256":  "9fcbd9906c38e1eae55fb1036ab01af130917a283b6449ed5e6eac694d2c479c",
+                                            "commit":  "c9d3df02ac361c27ce44c9527d09b25003cacd30"
+                                        },
+                    "source_snapshot_binding":  {
+                                                    "canonical_sha256":  "5c71786dec8d1bf879bfcee4e4f6ff5ccd02bf0cc1f5863b4baa1259dab23af3",
+                                                    "commit":  "8c0b0fea150cf798eb6eb47cca5f3c4e1b128dff"
+                                                }
+                },
+    "signing":  {
+                    "mechanism":  "SSH_ED25519",
+                    "signed_annotated_tag_required":  true,
+                    "signed_commit_required":  true,
+                    "github_signing_key_registered":  true
+                },
+    "evidence_boundary":  {
+                              "signature_does_not_prove":  [
+                                                               "universal truth of underlying claims",
+                                                               "source authorship",
+                                                               "completeness of unpublished raw evidence",
+                                                               "independent semantic authenticity of the operator-supplied execution artifact"
+                                                           ],
+                              "signature_proves":  [
+                                                       "cryptographic authorship/control of the signing key",
+                                                       "integrity of the signed Git object",
+                                                       "binding of this release manifest to repository history"
+                                                   ]
+                          },
+    "gates":  {
+                  "raw_execution_artifact_digest_binding":  "PASS",
+                  "signed_release":  "PENDING_UNTIL_SIGNATURE_VERIFICATION",
+                  "source_snapshot_binding":  "PASS",
+                  "publication":  "PASS",
+                  "dir_001_verdict":  "HOLD",
+                  "operator_attestation":  "PASS",
+                  "release_binding":  "PASS",
+                  "independent_semantic_authentication":  "OPEN",
+                  "canonical_anchor":  "PASS"
+              },
+    "open_evidence":  [
+                          "independent semantic authentication remains OPEN",
+                          "DIR-001 retains one unresolved evidence gap"
+                      ],
+    "release_policy":  {
+                           "current_verdict":  "HOLD",
+                           "verdict_must_not_be_upgraded_by_signature_alone":  true
+                       },
+    "generated_utc":  "2026-09-03T17:40:33.3079800Z"
+}
