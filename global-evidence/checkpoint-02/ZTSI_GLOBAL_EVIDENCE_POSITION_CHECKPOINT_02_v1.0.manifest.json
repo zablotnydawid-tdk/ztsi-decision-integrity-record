@@ -1,0 +1,17 @@
+{
+  "schema": "ZTSI_GLOBAL_EVIDENCE_POSITION_CHECKPOINT",
+  "version": "1.0",
+  "checkpoint": "02",
+  "state_date": "2026-09-04",
+  "status": "FROZEN_ANALYTICAL_CHECKPOINT",
+  "artifact": "ZTSI_GLOBAL_EVIDENCE_POSITION_CHECKPOINT_02_v1.0.md",
+  "sha256": "d6a560a0548048642f916318732605900904060b4642af2fc46450709ce0bd3b",
+  "claim_boundary": {
+    "world_first": "UNVERIFIED",
+    "worldwide_unique": "NOT_CLAIMED",
+    "exact_public_1_to_1_match": "NOT_ESTABLISHED_IN_PERFORMED_COMPARISON",
+    "technical_differentiation": "SURVIVES_TEST_REQUIRED",
+    "model_independent_value": "TEST_REQUIRED"
+  },
+  "next_checkpoint": "03_CORPORATE_REPRODUCTION_CHALLENGE"
+}
